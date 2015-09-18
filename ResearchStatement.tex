@@ -38,7 +38,6 @@
 
 % Strategy uparrow shortcuts
 \newcommand{\win}{\uparrow}
-\newcommand{\prewin}{\underset{\text{pre}}{\uparrow}}
 \newcommand{\markwin}{\underset{\text{mark}}{\uparrow}}
 \newcommand{\tactwin}{\underset{\text{tact}}{\uparrow}}
 \newcommand{\kmarkwin}[1]{\underset{#1\text{-mark}}{\uparrow}}
@@ -46,7 +45,6 @@
 \newcommand{\codewin}{\underset{\text{code}}{\uparrow}}
 \newcommand{\limitwin}{\underset{\text{limit}}{\uparrow}}
 \newcommand{\notwin}{\not\uparrow}
-\newcommand{\notprewin}{\underset{\text{pre}}{\not\uparrow}}
 \newcommand{\notmarkwin}{\underset{\text{mark}}{\not\uparrow}}
 \newcommand{\nottactwin}{\underset{\text{tact}}{\not\uparrow}}
 \newcommand{\notkmarkwin}[1]{\underset{#1\text{-mark}}{\not\uparrow}}
@@ -54,7 +52,7 @@
 \newcommand{\notcodewin}{\underset{\text{code}}{\not\uparrow}}
 \newcommand{\notlimitwin}{\underset{\text{limit}}{\not\uparrow}}
 
-\newcommand{\oneptcomp}[1]{#1^*}
+\newcommand{\oneptcomp}[1]{#1^\star}
 \newcommand{\oneptlind}[1]{#1^\dagger}
 % \newcommand{\sharp}[1]{#1^{\#}}
 
@@ -152,19 +150,12 @@
 \end{center}
 
 
-With my experience in software development and entrepreneurship, I'm
-often asked variations of a certain question. \textit{``Why go into academia in
-lieu of a more lucrative career in industry?''} The reason is simple. While
-there are several intriguing puzzles in industry to be solved, the primary
-objective ultimately is profit. In comparison, as academics our foremost duty
-is to research open problems, create new knowledge, and pass on this knowledge
-through instruction and outreach, for the betterment of society.
-
 My emerging career as a mathematical researcher is punctuated with several
-results, invited talks, and a co-authored publication in Topology and its
-Applications with several more papers in preparation. I am passionate not
+results, invited talks, and multiple accepted publications with several
+more in perparation. I am passionate not
 only about the creation of my research, but
-also about how we share and collaborate as 21st-century mathematicians. My
+also about the cyberinfrastructure which we use to share and collaborate
+as 21st-century mathematicians. My
 experience with the open web provides me with a unique perspective on academic
 collaboration in the information age, which will be changing drastically
 in the coming decade. In addition, I'm excited to apply my history of
@@ -213,10 +204,16 @@ techniques which work for typical pyramids.
 Due to my experience as an undergraduate researcher in mathematics, I gained
 my initial excitement for discovering new mathematical ideas. But just as
 importantly, I also learned a lot about how I would want to mentor other
-undergraduate researchers beginning their own mathematical journeys.
+undergraduate researchers beginning their own mathematical journeys. In my
+first year at UNC Charlotte, I've already begun to do so; I have taken
+on my first student and will mentor her during Fall 2015
+as she writes a survey on finite and infinite combinatiral game theory. We
+chose this topic as it relates to my own current research on topological
+games, but it also is accessible to both an undergraduate student with a
+generalized background and to the layman.
 
 
-\section*{Graduate and Current Research}
+\section*{Current Research}
 
 I remained at Auburn to pursue a fifth-year mathematics education program,
 but ultimately committed full-time to mathematics, including coursework in
@@ -234,9 +231,11 @@ Auburn under Gary Gruenhage.
 
 \subsection*{Abstract}
 
-In my doctoral and current research, I have studied the applications of
-limited information strategies in various topological games. Particular results
-of note include:
+The majority of my research involves studying the applications of
+limited information strategies in various topological and set-theoretic
+games. More recently,
+I've also investigated generalized inverse limits with an ordinal-valued
+index set. Particular results of note include:
   \begin{itemize}
     \item extending results of Peter Nyikos \cite{MR1031771} on limited
           information strategies in Gruenhage's open-point convergence game,
@@ -245,94 +244,102 @@ of note include:
           spaces (joint work with Gary Gruenhage \cite{MR3227201})
     \item characterizing strong Eberlein compactness with the existence of
           a tactical winning strategy for Bell's proximal game
+          \cite{tacticProximal}
     \item showing an example of a locally compact, non-metacompact space for
           which the first player has a winning strategy but no winning
           $k$-tactical strategy for Gruenhage's compact-point game
-          \cite{MR752278}, and
+          \cite{ktacticsCompactOpen}
     \item extending results of Telgarsky \cite{MR753073} and Scheepers
           \cite{MR1273523} to characterize
-          game-theoretic strengthenings of the Menger property.
+          game-theoretic strengthenings of the Menger property and other
+          selection properties, and
+    \item proving that a generalized invesrse limit with index set \(\kappa\)
+          and an idempotent, continuum-valued, surjective u.s.c. bonding map
+          is not Corson compact (joint work with Scott Varagona
+          \cite{destroyMetrizability}).
   \end{itemize}
 
-\subsection*{Definitions}
+% \subsection*{Definitions}
 
-Intuitively, an
-\term{$\omega$-length game} involves two players exchanging \term{moves} by
-selecting elements from a given set over the course of $\omega=\{0,1,2,\dots\}$
-rounds. At the ``end'' of the game, the $\omega$-length sequence of choices
-made by the two players
-are inspected to see if it fits the game's \term{winning condition} for a
-particular player; if so, that player wins, and if not, the opponent wins.
-Rigorously, this may be modeled by a tuple $\<M,W\>$ where $M$ is the set of
-moves from which the players may choose from, and $W$ is the set of
-$\omega$-length sequences of moves
-for which the first player wins the game, called the \term{winning playthroughs}
-for the first player. Thus $M^\omega\setminus W$ would be the set of winning
-playthroughs for the second player, as no ties are allowed.
-The introduction of such games is commonly attributed to Gale and Stewart
-\cite{MR0054922}.
+% Intuitively, an
+% \term{$\omega$-length game} involves two players exchanging \term{moves} by
+% selecting elements from a given set over the course of $\omega=\{0,1,2,\dots\}$
+% rounds. At the ``end'' of the game, the $\omega$-length sequence of choices
+% made by the two players
+% are inspected to see if it fits the game's \term{winning condition} for a
+% particular player; if so, that player wins, and if not, the opponent wins.
+% Rigorously, this may be modeled by a tuple $\<M,W\>$ where $M$ is the set of
+% moves from which the players may choose from, and $W$ is the set of
+% $\omega$-length sequences of moves
+% for which the first player wins the game, called the \term{winning playthroughs}
+% for the first player. Thus $M^\omega\setminus W$ would be the set of winning
+% playthroughs for the second player, as no ties are allowed.
+% The introduction of such games is commonly attributed to Gale and Stewart
+% \cite{MR0054922}.
 
-A \term{topological
-game} is an $\omega$-length game where the moveset $M$ is related to the
-topological structure of a given space $X$.
-Perhaps the most prolific example of such a game
-is the \term{Banach-Mazur game} $\bmGame{X}$ played on a topological space $X$.
-During each round of this game, each player must choose an open subset of all
-previously played open sets, starting with player $\pl E$.
-Player $\pl E$ wins the game if the intersection
-of all the open sets is empty, and player $\pl N$ wins the game otherwise.
+% A \term{topological
+% game} is an $\omega$-length game where the moveset $M$ is related to the
+% topological structure of a given space $X$.
+% Perhaps the most prolific example of such a game
+% is the \term{Banach-Mazur game} $\bmGame{X}$ played on a topological space $X$.
+% During each round of this game, each player must choose an open subset of all
+% previously played open sets, starting with player $\pl E$.
+% Player $\pl E$ wins the game if the intersection
+% of all the open sets is empty, and player $\pl N$ wins the game otherwise.
 
-A function $\sigma:M^{<\omega}\to M$ is known as a \term{strategy} for a game
-with moveset $M$: intuitively, it determines the moves for a player given
-all the previous moves of her opponent. If there exists a strategy $\sigma$
-such that a player $\pl A$ will always win a game $G$ while using it, then
-we say $\sigma$ is a \term{winning strategy} and write $\pl A\win G$
-(``$\pl A$ wins $G$''). (All finite-length games have a player with a
-winning strategy; however, under $ZFC$ this need not
-hold for an infinite game.) The presence or absence of a winning strategy for
-a player in a topological game on $X$ characterizes
-a topological property of $X$. For example, a space $X$ is \term{Baire}
-(the countable intersection of open dense sets is dense) if and only if
-$\pl E\notwin \bmGame{X}$.
+% A function $\sigma:M^{<\omega}\to M$ is known as a \term{strategy} for a game
+% with moveset $M$: intuitively, it determines the moves for a player given
+% all the previous moves of her opponent. If there exists a strategy $\sigma$
+% such that a player $\pl A$ will always win a game $G$ while using it, then
+% we say $\sigma$ is a \term{winning strategy} and write $\pl A\win G$
+% (``$\pl A$ wins $G$''). (All finite-length games have a player with a
+% winning strategy; however, under $ZFC$ this need not
+% hold for an infinite game.) The presence or absence of a winning strategy for
+% a player in a topological game on $X$ characterizes
+% a topological property of $X$. For example, a space $X$ is \term{Baire}
+% (the countable intersection of open dense sets is dense) if and only if
+% $\pl E\notwin \bmGame{X}$.
 
-Sometimes a player may not need to use the complete history of her opponent's
-moves to win a game. We call such strategies
-\term{limited information strategies}. A strategy
-which only uses the latest move (last $k$ moves) of the opponent is called
-a \term{tactical} (\term{$k$-tactical}) strategy, and if it is winning we
-write $\pl A\tactwin G$ ($\pl A\ktactwin{k} G$). A strategy
-which only uses the latest move (last $k$ moves, no moves) of the opponent
-and the number of the current round is called a \term{Markov} (\term{$k$-Markov},
-\term{predetermined}) strategy, and if it is winning we
-write $\pl A\markwin G$ ($\pl A\kmarkwin{k} G$, $\pl A\prewin G$). A strategy
-which uses the latest move of both players is called a \term{coding} strategy,
-and if it is winning we write $\pl A\codewin G$. The presence or absence
-of a winning limited information strategy for a player in a topological game
-on $X$ may characterize a stronger property of $X$ than the one characterized
-by a winning perfect information strategy. For example, $\pl N \win \bmGame X$
-if and only if $\pl N \codewin \bmGame X$; however, $\pl N \tactwin \bmGame X$
-if and only if $X$ is a \term{siftable} space (all siftable spaces are thus
-Baire, but the converse does not hold). A famous question asks if for each
-$k<\omega$ there exists $X_k$ such that $\pl N\ktactwin{k+1}\bmGame{X_k}$
-but $\pl N\notktactwin{k}\bmGame{X_k}$. (The non-trivial example of Debs
-referenced earlier witnesses $k=1$.)
+% Sometimes a player may not need to use the complete history of her opponent's
+% moves to win a game. We call such strategies
+% \term{limited information strategies}. A strategy
+% which only uses the latest move (last $k$ moves) of the opponent is called
+% a \term{tactical} (\term{$k$-tactical}) strategy, and if it is winning we
+% write $\pl A\tactwin G$ ($\pl A\ktactwin{k} G$). A strategy
+% which only uses the latest move (last $k$ moves, no moves) of the opponent
+% and the number of the current round is called a \term{Markov} (\term{$k$-Markov},
+% \term{predetermined}) strategy, and if it is winning we
+% write $\pl A\markwin G$ ($\pl A\kmarkwin{k} G$, $\pl A\kmarkwin0 G$). A strategy
+% which uses the latest move of both players is called a \term{coding} strategy,
+% and if it is winning we write $\pl A\codewin G$. The presence or absence
+% of a winning limited information strategy for a player in a topological game
+% on $X$ may characterize a stronger property of $X$ than the one characterized
+% by a winning perfect information strategy. For example, $\pl N \win \bmGame X$
+% if and only if $\pl N \codewin \bmGame X$; however, $\pl N \tactwin \bmGame X$
+% if and only if $X$ is a \term{siftable} space (all siftable spaces are thus
+% Baire, but the converse does not hold). A famous question asks if for each
+% $k<\omega$ there exists $X_k$ such that $\pl N\ktactwin{k+1}\bmGame{X_k}$
+% but $\pl N\notktactwin{k}\bmGame{X_k}$. (The non-trivial example of Debs
+% referenced earlier witnesses $k=1$.)
 
-For a more complete overview of the history of topological games, I recommend
-R. Telgarsky's excellent survey dedicated to the Banach Mazur game's 50th
-anniversary \cite{MR892457}.
+% For a more complete overview of the history of topological games, I recommend
+% R. Telgarsky's excellent survey dedicated to the Banach Mazur game's 50th
+% anniversary \cite{MR892457}.
 
 \subsection*{Results and Open Questions}
 
 G. Gruenhage introduced
-the $\omega$-length game $\gruConGame{X}{x}$ such that during
+the $\omega$-length game $\gruConGame{X}{x}$ where during
 each round the first player $\pl O$ chooses a neighborhood of $x$ in $X$, and
 the second player $\pl P$ chooses a point within all the previously chosen
 neighborhoods \cite{MR0413049}.
 $\pl O$ wins this game if the points chosen by $\pl P$
 converge to $x$. It's easy to see that if $x$ has a countable base,
-then $\pl O \prewin \gruConGame{X}{x}$, and this in fact is
+then $\pl O \kmarkwin0 \gruConGame{X}{x}$, that is, $\pl O$ has a winning
+$0$-Markov strategy using only knowledge of the round number; this in fact is
 a game-theoretic characterization of first-countability at $x$. The well-known
 class of $W$ spaces are the spaces for which $\pl O \win \gruConGame{X}{x}$
+($\pl O$ has a winning strategy using full information)
 for all $x\in X$; all first-countable spaces are then $W$ spaces.
 
 To investigate the limited-information setting for $\gruConGame{X}{x}$, we look
@@ -431,7 +438,7 @@ $\pl K\tactwin\gruKPGame{X}$ if and
 only if $X$ is metacompact, and $\pl K\markwin\gruKPGame{X}$ if and only if
 $X$ is $\sigma$-metacompact. I've extended this to show that for locally
 compact or Hausdorff compactly-generated spaces,
-$\pl K\prewin\gruKPGame{X}$ if and only if $X$ is hemicompact.
+$\pl K\kmarkwin0\gruKPGame{X}$ if and only if $X$ is hemicompact.
 
 In fact, for
 locally compact or Hausdorff compactly-generated spaces, this game is
@@ -441,11 +448,11 @@ instead of points. However, there exists an ultrafilter
 $\mc F\in\beta\omega\setminus\omega$ such that the single-ultrafilter space
 $\omega\cup\{\mc F\}$
 is an example of a Hausdorff non-compactly-generated space with
-$\pl K\prewin\gruKPGame{X}$ but $\pl K\notprewin\gruKLGame{X}$. Due to a lack
+$\pl K\kmarkwin0\gruKPGame{X}$ but $\pl K\notkmarkwin0\gruKLGame{X}$. Due to a lack
 of counter-examples, it's natural to ask:
 
 \begin{question}
-  Does $\pl K\prewin\gruKLGame{X}$ imply $X$ is compactly generated?
+  Does $\pl K\kmarkwin0\gruKLGame{X}$ imply $X$ is compactly generated?
 \end{question}
 
 Gruenhage suggested a consistent example of a locally compact non-metacompact
@@ -499,6 +506,7 @@ perfect information for $\pl F$ to win $\menGame{X}$.
   Is there a space $X$ with $\pl F\win\menGame{X}$ but
   $\pl F\notkmarkwin{2}\menGame{X}$?
 \end{question}
+
 
 
 \section*{Mathematical Research and Cyberinfrastructure in the 21st Century}

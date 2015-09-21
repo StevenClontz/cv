@@ -239,7 +239,7 @@ index set. Particular results of note include:
   \begin{itemize}
     \item extending results of Peter Nyikos \cite{MR1031771} on limited
           information strategies in Gruenhage's open-point convergence game,
-    \item answering a question of Nyikos \cite{nyikosProximalPreprint} showing
+    \item answering a question of Nyikos \cite{MR3288115} showing
           that Bell's proximal game characterizes the class of Corson compact
           spaces (joint work with Gary Gruenhage \cite{MR3227201})
     \item characterizing strong Eberlein compactness with the existence of
@@ -357,20 +357,16 @@ When $\pl P$ must play within all previously played open sets, I have shown
 that $\pl O\notkmarkwin{k}\gruConGame{\oneptcomp\kappa}{\infty}$ for
 $\kappa>\omega_1$ and
 $\pl O\notktactwin{k}\gruConGame{\oneptcomp\omega_1}{\infty}$, but knowledge
-of the round number in fact allows
-$\pl O\markwin\gruConGame{\oneptcomp\omega_1}{\infty}$. When given the ability
-to encode information within $\pl O$'s own previous move,
+of the round number allows
+$\pl O\markwin\gruConGame{\oneptcomp\omega_1}{\infty}$. When $\pl O$
+is allowed to use her most recent move as well as her opponents,
+she may win by encoding information on the history of the game into
+her own moves, that is,
 $\pl O\codewin\gruConGame{\Sigma\mb R^\kappa}{\vec0}$ for all cardinals
 $\kappa$.
 
-These results suggest analogous questions to those asked of the
-Banach-Mazur game $\bmGame{X}$.
-
-\begin{question}
-  For any $k<\omega$, does there exist a space $X$ and point $x\in X$ such that
-  $\pl O\kmarkwin{k+1}\gruConGame{X}{x}$
-  but $\pl O\notkmarkwin{k}\gruConGame{X}{x}$?
-\end{question}
+This result suggests an analogous question to those asked of the
+Banach-Mazur game.
 
 \begin{question}
   Does $\pl O\codewin\gruConGame{X}{x}$ imply $\pl O\win\gruConGame{X}{x}$?
@@ -406,23 +402,29 @@ Gruenhage in \cite{MR752278}: a
 compact space is Corson compact if and only if
 $\pl O\win\gruConGame{X^2}{\Delta}$, where $\Delta$ is the diagonal of $X^2$.
 
-More recently, I have shown that $\pl O\tactwin\bellConGame{X}$ characterizes
-\term{strong Eberlein compactness}.
 Since $\pl O\markwin\gruConGame{X^2}{\Delta}$ characterizes \term{Eberlein
-compactness} in the category of compact spaces, some natural questions arise
+compactness} in the category of compact spaces, and
+$\pl D\markwin\bellConGame{X}$ for any Eberlein compact space,
+a natural question arises
 concerning the relationship between Bell's game and Gruenhage's game.
 
 \begin{question}
-  Does $\pl D\kmarkwin{k}\bellConGame{X}$
-  characterize Eberlein compactness in the category of compact spaces
-  for some $k$?
+  Does $\pl D\markwin\bellConGame{X}$
+  characterize Eberlein compactness in the category of compact spaces?
 \end{question}
 
 \begin{question}
-  For what conditions on $X$ and types of limited information strategies
-  can we conclude $\gruConGame{X^2}{\Delta}$ and $\bellConGame{X}$ are
-  equivalent?
+  Does $\pl D\win\bellConGame{X}$ characterize all closed subspaces of
+  a $\Sigma$-product of real lines (as posed by P. Nyikos)?
 \end{question}
+
+More recently, I have shown that $\pl O\tactwin\bellConGame{X}$ characterizes
+\term{strong Eberlein compactness} \cite{tacticProximal}. This has shown
+that $\bellConGame{X}$ and $\gruConGame{X^2}{\Delta}$ are not equivalent
+games for compact spaces when considering limited information:
+$\pl D\tactwin\gruConGame{X^2}{\Delta}$ for any compact metrizable space,
+but many
+compact metrizable spaces (e.g. $I=[0,1]$) are not strong Eberlein compact.
 
 Another game related to $\gruConGame{X}{x}$ is $\gruKPGame{X}$. During each
 round of this game, $\pl K$ chooses a compact set in $X$, followed by
@@ -467,19 +469,23 @@ leaves the following question.
   $X$ is metacompact?
 \end{question}
 
-Finally, I have investigated the classic topological game $\menGame{X}$
-characterizing the \term{Menger} property.
-In these games, $\pl C$ chooses an open cover of the space $X$,
-and $\pl F$ chooses a subset of $X$ which is covered by a
-finite subset of the open cover. $\pl F$ wins if the union of the chosen
-subsets equals the space.
+I have investigated the classic topological game $\menGame{X}$
+characterizing the \term{Menger} property, in addition to several other
+selection property games of the form $G_{fin}(\mc A,\mc B)$ as studied
+by Scheepers \cite{MR1378387} and others.
+During round $n$ of such games, $\pl A$ chooses an element $A_n$ of $\mc A$,
+and $\pl B$ chooses some finite subset of $A_n$.
+$\pl B$ wins if the union of the chosen
+subsets is a member of $\mc B$. In this language, $\menGame{X}$ is the special
+case where $\mc A=\mc B=\mc O$, the collection of open covers of $X$,
+and denoting $\pl A$ by $\pl C$ and $\pl B$ by $\pl F$.
 
 Telgarsky \cite{MR753073} and Scheepers \cite{MR1273523} provided proofs of
 the fact that for metrizable spaces, $\pl F\win\menGame{X}$
 characterizes $\sigma$-compactness. I have broken this down to show that
 $\pl F\markwin\menGame{X}$ characterizes $\sigma$-compactness for regular
-spaces, and a winning perfect information strategy can be used to construct
-a winning Markov strategy for second-countable spaces.
+spaces, and a winning perfect information strategy for a second-countable
+space may be improved to a winning Markov strategy.
 
 Since a winning $(k+2)$-Markov strategy can always be used to construct a
 winning $2$-Markov strategy, I have investigated the class of
@@ -492,11 +498,12 @@ and introduced by Scheepers in \cite{MR1129143}
 to study a set-theoretic game similar to $\menGame{\oneptlind\kappa}$,
 I have shown that $\pl F\kmarkwin{2}\menGame{\oneptlind\kappa}$. Several
 games similar to $\menGame{\oneptlind\kappa}$ can be won with a $2$-Markov
-or $2$-tactical strategy assuming $\alcompS\kappa$, so the axiom may in fact be
-necessary.
+or $2$-tactical strategy assuming $\alcompS\kappa$, so it would be interesting
+to construct a winning strategy when $\alcompS\kappa$ fails.
 
 \begin{question}
-  Does $\pl F\kmarkwin{2}\menGame{\oneptlind\kappa}$ imply $\alcompS\kappa$?
+  When does there exist a cardinal $\kappa$ such that
+  $\pl F\kmarkwin{2}\menGame{\oneptlind\kappa}$ but $\neg\alcompS\kappa$?
 \end{question}
 
 It also hasn't been shown if there exists a space which actually requires
@@ -507,6 +514,35 @@ perfect information for $\pl F$ to win $\menGame{X}$.
   $\pl F\notkmarkwin{2}\menGame{X}$?
 \end{question}
 
+Recent developments in continuum theory have involved the study of generalized
+inverse limits with set-valued bonding maps and linearly ordered index sets:
+$\varprojlim \{X_i,f_{ij},L\}\subseteq \prod_{i\in L}X_i$ satisfying
+$x(i)\in f_{ij}(x(j))$ for all $i<j$ in $L$. Since $L$ need not
+be countable, metrizability of the space is not guaranteed, and many
+other questions in general topology may arise.
+
+I showed
+with Scott Varagona in \cite{destroyMetrizability} that when
+$X_i=[0,1]$ and $f_{ij}=f$ for some surjective,
+idempotent, upper-semicontinuous
+$f:[0,1]\to C([0,1])$ (where $C([0,1])$ is the collection of all subcontinua
+of $[0,1]$) distinct from the trivial map,
+the graph of $f$ must satisfy the so-called condition
+$\Gamma$: there exist $x,y$ with $\<x,x\>$, $\<y,y\>$, and $\<x,y\>$ on
+the graph of $f$.
+It's not hard to then see that when $L$ is an uncountable ordinal,
+the inverse limit must then contain a copy of $\omega_1+1$, which
+is not metrizable or even Corson compact.
+
+\begin{question}
+  Do all compactum-valued, idempotent, surjective, u.s.c. $f:[0,1]\to 2^{[0,1]}$
+  satsify condition $\Gamma$?
+\end{question}
+
+\begin{question}
+  Does there exist a nontrivial idempotent map $f$ and uncountable index $L$
+  such that $\varprojlim \{[0,1],f,L\}$ is metrizable?
+\end{question}
 
 
 \section*{Mathematical Research and Cyberinfrastructure in the 21st Century}
@@ -515,17 +551,17 @@ In addition to researching mathematics, I am also interested in the mechanics
 of how we research and collaborate as mathematicians in the 21st century.
 While we have made progress in recent years as journals move to make their
 archives available online and sites like arXiv.org provide convenient platforms
-for sharing preprints of cutting-edge results, we have yet to move beyond
+for sharing preprints of cutting-edge results, we are still
 inefficiently passing around virtual sheets of paper.
 
-Mathematics research currently operates as a \term{waterfall} process: results
+Mathematics research currently operates as a waterfall process: results
 are found, results are written up in a paper (and possibly shared in a
 preprint), this paper is submitted for publication, and following the refereeing
 and copyediting process, the paper may be published and accepted by the
 community. This workflow moves in one direction, and results in a static
 product (occasionally with errors).
 
-Thanks to the open web, we have the opportunity to adopt a more \term{agile}
+Thanks to the open web, we have the opportunity to adopt a more agile
 workflow. This process is perhaps most
 easily seen by looking at collaboration on open source software.
 Social coding platforms like GitHub and BitBucket have given software
@@ -535,20 +571,26 @@ projects are tracked using revision control, with a public record of
 contributions made to each project. The process of creating, reviewing, and
 publishing such code is a continuous and democratic process, and results
 in living projects which can be refined and expanded over time.
-
-Mathematics is not words on a page. By opening ourselves up to the tools
-of modern technology not only to assist with our research, but also with
+By taking advatnage of the tools provided
+by the modern web not only to assist with our research, but also with
 the publication and collaboration of our research, we will be able to most
 efficiently produce and share mathematical knowledge as we move forward in
-the modern era. Projects such as the \textit{$\pi$-Base Topology Database}
-(to which I am a contributor) and
+the modern era.
+
+Projects such as the \textit{$\pi$-Base Topology Database}
+(to which I am a contributor and consultant) and
 \textit{Homotopy Type Theory: Univalent Foundations of Mathematics} \cite{hottbook}
 (licensed under Creative Commons and accepting pull requests on GitHub)
-anticipate this paradigm shift, and as more digital
-natives grow up to be mathematicians, such tools and openness will be soon be
-expected as a matter of fact. I am excited to continue innovating in this area,
-not only as a mathematician and software developer, but also as a future faculty
-member.
+are great examples of how mathematicians can collaborate in producing
+high quality resources to assist researchers and students. Likewise, I
+am actively developing \textit{Online Seminars in Mathematics},
+an initiative to
+assist mathematical seminars in streaming their content online so that
+researchers may be engaged in such scholarly activity regardless of their
+geographical location.
+Through these programs and others,
+I am excited to continue innovating in this area
+as a mathematician and faculty member.
 
 
 

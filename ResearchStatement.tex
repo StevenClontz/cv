@@ -1,7 +1,7 @@
 \documentclass[11pt]{amsart}
 \usepackage{fancyhdr}
 \usepackage[margin=1in]{geometry}
-
+ 
 \usepackage[page]{totalcount}
 
 \usepackage{amsthm}
@@ -150,468 +150,74 @@
 \end{center}
 
 
-My emerging career in mathematical research is punctuated with several
-results, invited talks, and multiple accepted publications with several
-more in perparation. My main work involves the areas of set-theoretic topology,
-continuum theory, and infinite combinatorial games. I am passionate not
-only about the creation of my research, but
-also about the cyberinfrastructure which we use to share and collaborate
-as 21st-century mathematicians. My
-experience with the open web provides me with a unique perspective on academic
-collaboration in the information age, which will be changing drastically
-in the coming decade. In addition, I'm excited to apply my history of
-leadership training and mentorship in order to guide young mathematicians
-in their own research experience, beginning at the undergraduate level.
+My scholarship is primarily focused on a strong research program studying general topology,
+particularly selection games. 
+For context, a selection game is a two-player game that
+characterizes the structure of a topological space based upon which player has a
+winning strategy, a rule that a player can use to guarantee victory in the game
+no matter how their opponent plays.
+Key results published during my time at South
+include the following. 
 
+Theorem: A family of almost-compatible finite-to-one functions
+mapping countable subsets of a cardinal
+to the natural numbers cannot be used to construct a family of one-to-one
+functions with the same property. [0]
 
-\section*{Undergraduate Research}
+This result has important ramifications in set theory and topology. In particular,
+such a family of finite-to-one functions for the second uncountable cardinal
+may be constructed using the usual ZFC axioms of 
+set theory, but if the Continuum Hypothesis holds,
+then it is impossible to construct such one-to-one functions. Considering the Menger
+selection game characterizing topological properties of a topological space,
+finite-to-one functions
+are sufficient to design ``Markov'' strategies that are able to track the number of moves
+made in a topological game, but one-to-one functions seem to be required to design
+``tactical'' strategies that do not need to track this additional information.
 
-My calling to research began in my undergraduate career. Auburn University
-(regrettably, in my opinion) does not require any sort of thesis or capstone
-project of its undergraduate mathematics majors. Nonetheless, during my junior
-year, I worked on some toy problems suggested by two professors at Auburn:
-Phil Zenor in topology, and Andras Bezdek in geometry. While I would ultimately
-return to topology for my graduate-level research, I was fascinated with a
-very tangible and surprisingly deep question on the unfolding of polyhedral
-surfaces into the plane, which eventually became the topic of my undergraduate
-thesis written as part of the requirements to be recognized as a University
-Honors Scholar \cite{UNDERGRAD}.
+Theorem: A Markov strategy for the Menger selection game using finite information 
+may always be improved
+to only require memory of the two most recent moves of the opponent. [1] 
 
-Suppose that a polyhedron can be cut along its edges and unfolded into
-the plane; we refer to such an unfolding as a \term{net} of the polyhedron.
-It is easy to construct polyhedra with non-convex faces which do not
-yield a net. A classic example of a polyhedron with convex faces which does
-not admit a net involves gluing so-called \term{witch's hats} to the faces
-of a regular octahedron; however, this polyhedron is not convex
-\cite{UNUNFOLDABLE}.
+This result is striking as it does not hold for another well-studied game
+attributed to Banach and Mazur which characterizes the Baire topological property.
+Telgarsky conjectures that there exists a topological space for which a winning
+strategy using three moves of the opponent exists for the Banach-Mazur game, 
+but it cannot be
+improved to a strategy using two moves of the opponent. My result demonstrates
+why this conjecture is not a trivial assumption to make. 
 
-G. C. Shephard conjectured in 1975 that every convex polyhedron yields at least
-one net \cite{MR0390915}. If it is surprising that this question had
-not been explicitly posed previously, then it is perhaps more shocking that
-such a seemingly simple statement remains open to this day. For a beginning
-mathematician, this was an exciting opportunity to engage a research-level
-problem which was accessible without graduate-level coursework.
-Indeed, the basic premise requires no mathematical background to appreciate,
-and I successfully applied and interviewed for undergraduate research
-fellowships at the university and college levels.
+Theorem: Any strategy for a selection game satisfying a
+certain countability requirement may be improved to a Markov strategy requiring
+memory of only the most recent move of the opponent. [2] 
 
-My thesis investigated a small subclass of convex polyhedra which I denoted
-\term{generalized pyramids}: the convex hull of two parallel polygons, one of
-which may be degenerate and whose projection must lay within the other.
-In addition to a survey of the problem of unfolding polyhedra, I outlined
-two techniques for unfolding certain generalized pyramids, based upon
-techniques which work for typical pyramids.
+This result improves the previous theorem whenever the countability requirement
+is satisfied, as is the case in many applications. The importance of this
+paper is witnessed by its inclusion in an upcoming special issue of Topology
+and its Applications dedicated to selection principles and their applications.
 
+In addition to the papers cited above, I have two co-authored papers
+currently under review, making my research productivity around two peer-reviewed
+papers a year. 
+To date every paper I have submitted for publication has been accepted
+pending minor revisions, and the journals I publish in are the standard for publications
+in my field. For comparison, my PhD advisor (Gary Gruenhage, Auburn University)
+has published fifteen out of his eighteen research papers over the past decade
+from these same journals. 
 
-\section*{Current Research}
+[0]: Clontz, Steven; Dow, Alan;
+Almost compatible functions and infinite length games.
+Rocky Mountain J. Math. 48 (2018), no. 2, 463–483.   
 
-I remained at Auburn to pursue a fifth-year mathematics education program,
-but ultimately committed full-time to mathematics, including coursework in
-general topology and combinatorial game theory. Before beginning my doctoral
-work, I wrote a masters thesis
-under Gary Gruenhage surveying known applications of stationary subsets of
-regular uncountable cardinals \cite{MASTERS}.
+[1]: Clontz, Steven;
+Applications of limited information strategies in Menger's game. 
+Comment. Math. Univ. Carolin. 58 (2017), no. 2, 225–239. 
 
-I was first introduced to infinite combinatorial games during a descriptive
-set theory course. Eager to learn more, I translated a paper by G. Debs
-\cite{MR817083} constructing a space for which the second player has a winning
-strategy in the Banach-Mazur game, but not a winning tactical
-strategy. This paper served as the inspiration for my doctoral work at
-Auburn under Gary Gruenhage.
+[2]: Clontz, Steven;
+Relating games of Menger, countable fan tightness, and selective separability.
+Topology Appl., to appear.
 
-\subsection*{Abstract}
-
-The majority of my research involves studying the applications of
-limited information strategies in various topological and set-theoretic
-games. More recently,
-I've also investigated generalized inverse limits with an ordinal-valued
-index set. Particular results of note include:
-  \begin{itemize}
-    \item extending results of Peter Nyikos \cite{MR1031771} on limited
-          information strategies in Gruenhage's open-point convergence game,
-    \item answering a question of Nyikos \cite{MR3288115} showing
-          that Bell's proximal game characterizes the class of Corson compact
-          spaces (joint work with Gary Gruenhage \cite{MR3227201})
-    \item characterizing strong Eberlein compactness with the existence of
-          a tactical winning strategy for Bell's proximal game
-          \cite{tacticProximal}
-    \item showing an example of a locally compact, non-metacompact space for
-          which the first player has a winning strategy but no winning
-          $k$-tactical strategy for Gruenhage's compact-point game
-          \cite{ktacticsCompactOpen}
-    \item extending results of Telgarsky \cite{MR753073} and Scheepers
-          \cite{MR1273523} to characterize
-          game-theoretic strengthenings of the Menger property and other
-          selection properties, and
-    \item proving that a generalized invesrse limit with index set \(\kappa\)
-          and an idempotent, continuum-valued, surjective u.s.c. bonding map
-          is not Corson compact (joint work with Scott Varagona
-          \cite{destroyMetrizability}).
-  \end{itemize}
-
-% \subsection*{Definitions}
-
-% Intuitively, an
-% \term{$\omega$-length game} involves two players exchanging \term{moves} by
-% selecting elements from a given set over the course of $\omega=\{0,1,2,\dots\}$
-% rounds. At the ``end'' of the game, the $\omega$-length sequence of choices
-% made by the two players
-% are inspected to see if it fits the game's \term{winning condition} for a
-% particular player; if so, that player wins, and if not, the opponent wins.
-% Rigorously, this may be modeled by a tuple $\<M,W\>$ where $M$ is the set of
-% moves from which the players may choose from, and $W$ is the set of
-% $\omega$-length sequences of moves
-% for which the first player wins the game, called the \term{winning playthroughs}
-% for the first player. Thus $M^\omega\setminus W$ would be the set of winning
-% playthroughs for the second player, as no ties are allowed.
-% The introduction of such games is commonly attributed to Gale and Stewart
-% \cite{MR0054922}.
-
-% A \term{topological
-% game} is an $\omega$-length game where the moveset $M$ is related to the
-% topological structure of a given space $X$.
-% Perhaps the most prolific example of such a game
-% is the \term{Banach-Mazur game} $\bmGame{X}$ played on a topological space $X$.
-% During each round of this game, each player must choose an open subset of all
-% previously played open sets, starting with player $\pl E$.
-% Player $\pl E$ wins the game if the intersection
-% of all the open sets is empty, and player $\pl N$ wins the game otherwise.
-
-% A function $\sigma:M^{<\omega}\to M$ is known as a \term{strategy} for a game
-% with moveset $M$: intuitively, it determines the moves for a player given
-% all the previous moves of her opponent. If there exists a strategy $\sigma$
-% such that a player $\pl A$ will always win a game $G$ while using it, then
-% we say $\sigma$ is a \term{winning strategy} and write $\pl A\win G$
-% (``$\pl A$ wins $G$''). (All finite-length games have a player with a
-% winning strategy; however, under $ZFC$ this need not
-% hold for an infinite game.) The presence or absence of a winning strategy for
-% a player in a topological game on $X$ characterizes
-% a topological property of $X$. For example, a space $X$ is \term{Baire}
-% (the countable intersection of open dense sets is dense) if and only if
-% $\pl E\notwin \bmGame{X}$.
-
-% Sometimes a player may not need to use the complete history of her opponent's
-% moves to win a game. We call such strategies
-% \term{limited information strategies}. A strategy
-% which only uses the latest move (last $k$ moves) of the opponent is called
-% a \term{tactical} (\term{$k$-tactical}) strategy, and if it is winning we
-% write $\pl A\tactwin G$ ($\pl A\ktactwin{k} G$). A strategy
-% which only uses the latest move (last $k$ moves, no moves) of the opponent
-% and the number of the current round is called a \term{Markov} (\term{$k$-Markov},
-% \term{predetermined}) strategy, and if it is winning we
-% write $\pl A\markwin G$ ($\pl A\kmarkwin{k} G$, $\pl A\kmarkwin0 G$). A strategy
-% which uses the latest move of both players is called a \term{coding} strategy,
-% and if it is winning we write $\pl A\codewin G$. The presence or absence
-% of a winning limited information strategy for a player in a topological game
-% on $X$ may characterize a stronger property of $X$ than the one characterized
-% by a winning perfect information strategy. For example, $\pl N \win \bmGame X$
-% if and only if $\pl N \codewin \bmGame X$; however, $\pl N \tactwin \bmGame X$
-% if and only if $X$ is a \term{siftable} space (all siftable spaces are thus
-% Baire, but the converse does not hold). A famous question asks if for each
-% $k<\omega$ there exists $X_k$ such that $\pl N\ktactwin{k+1}\bmGame{X_k}$
-% but $\pl N\notktactwin{k}\bmGame{X_k}$. (The non-trivial example of Debs
-% referenced earlier witnesses $k=1$.)
-
-% For a more complete overview of the history of topological games, I recommend
-% R. Telgarsky's excellent survey dedicated to the Banach Mazur game's 50th
-% anniversary \cite{MR892457}.
-
-\subsection*{Results and Open Questions}
-
-G. Gruenhage introduced
-the $\omega$-length game $\gruConGame{X}{x}$ where during
-each round the first player $\pl O$ chooses a neighborhood of $x$ in $X$, and
-the second player $\pl P$ chooses a point within all the previously chosen
-neighborhoods \cite{MR0413049}.
-$\pl O$ wins this game if the points chosen by $\pl P$
-converge to $x$. It's easy to see that if $x$ has a countable base,
-then $\pl O \kmarkwin0 \gruConGame{X}{x}$, that is, $\pl O$ has a winning
-$0$-Markov strategy using only knowledge of the round number; this in fact is
-a game-theoretic characterization of first-countability at $x$. The well-known
-class of $W$ spaces are the spaces for which $\pl O \win \gruConGame{X}{x}$
-($\pl O$ has a winning strategy using full information)
-for all $x\in X$; all first-countable spaces are then $W$ spaces.
-
-To investigate the limited-information setting for $\gruConGame{X}{x}$, we look
-to non-first-countable $W$ spaces. Examples which I have studied include the
-one-point compactification of a discrete cardinal
-$\oneptcomp\kappa=\kappa\cup\{\infty\}$ and the
-$\Sigma$-product of $\kappa$ real lines $\Sigma\mb R^\kappa$. (Note that
-$\oneptcomp\kappa$ is a subspace of $\Sigma\mb R^\kappa$ where
-$\infty\in\oneptcomp\kappa$ corresponds to $\vec0\in\Sigma\mb R^\kappa$.)
-
-P. Nyikos first showed that
-$\pl O\notmarkwin\gruConGame{\oneptcomp\omega_1}{\infty}$ when $\pl P$ is only
-required to play within the latest open set played \cite{MR1031771}.
-When $\pl P$ must play within all previously played open sets, I have shown
-that $\pl O\notkmarkwin{k}\gruConGame{\oneptcomp\kappa}{\infty}$ for
-$\kappa>\omega_1$ and
-$\pl O\notktactwin{k}\gruConGame{\oneptcomp\omega_1}{\infty}$, but knowledge
-of the round number allows
-$\pl O\markwin\gruConGame{\oneptcomp\omega_1}{\infty}$. When $\pl O$
-is allowed to use her most recent move as well as her opponents,
-she may win by encoding information on the history of the game into
-her own moves, that is,
-$\pl O\codewin\gruConGame{\Sigma\mb R^\kappa}{\vec0}$ for all cardinals
-$\kappa$.
-
-This result suggests an analogous question to those asked of the
-Banach-Mazur game.
-
-\begin{question}
-  Does $\pl O\codewin\gruConGame{X}{x}$ imply $\pl O\win\gruConGame{X}{x}$?
-\end{question}
-
-Recently, J. Bell introduced a related game $\bellConGame{X}$ for uniformizable
-spaces \cite{MR3239205}. During each round of this game, $\pl D$ chooses an
-entourage of the diagonal, and $\pl P$ chooses a point within the previous
-entourage of the previous point.
-$\pl D$ wins this game if either the points chosen by $\pl P$ converge,
-or the intersection of the entourage neighborhoods have empty intersection.
-Spaces for which $\pl D$ has a winning strategy
-are said to be \term{proximal}.
-
-Bell demonstrated that all proximal spaces
-are $W$ spaces; I've extended this by showing that for any $k<\omega$,
-a winning $2k$-Markov (resp. $2k$-tactical) strategy for Bell's game can be
-used to construct a winning $k$-Markov (resp. $k$-tactical) strategy for
-$\gruConGame{X}{x}$. In addition, if $X$ only has a single non-isolated point,
-then a winning $k$-Markov (resp. $k$-tactical) strategy in either game can be
-used to construct a winning $k$-Markov (resp. $k$-tactical) strategy in the
-other game.
-
-Compact subspaces of $\Sigma$-products of real lines are called
-\term{Corson compact}. Since $\Sigma$-products of proximal spaces and
-closed subspaces of proximal spaces are proximal, all Corson compacts are
-easily seen to be proximal. I showed with Gruenhage in \cite{MR3227201} that
-the converse also holds. To see this, we gave a non-trivial proof that when
-$\pl D\win\bellConGame{X}$ and $X$ is compact, then
-$\pl O\win\gruConGame{X}{H}$ for any closed subset
-$H$ of $X$. This yields the desired result when combined with a lemma due to
-Gruenhage in \cite{MR752278}: a
-compact space is Corson compact if and only if
-$\pl O\win\gruConGame{X^2}{\Delta}$, where $\Delta$ is the diagonal of $X^2$.
-
-Since $\pl O\markwin\gruConGame{X^2}{\Delta}$ characterizes \term{Eberlein
-compactness} in the category of compact spaces, and
-$\pl D\markwin\bellConGame{X}$ for any Eberlein compact space,
-a natural question arises
-concerning the relationship between Bell's game and Gruenhage's game.
-
-\begin{question}
-  Does $\pl D\markwin\bellConGame{X}$
-  characterize Eberlein compactness in the category of compact spaces?
-\end{question}
-
-\begin{question}
-  Does $\pl D\win\bellConGame{X}$ characterize all closed subspaces of
-  a $\Sigma$-product of real lines (as posed by P. Nyikos)?
-\end{question}
-
-More recently, I have shown that $\pl O\tactwin\bellConGame{X}$ characterizes
-\term{strong Eberlein compactness} \cite{tacticProximal}. This has shown
-that $\bellConGame{X}$ and $\gruConGame{X^2}{\Delta}$ are not equivalent
-games for compact spaces when considering limited information:
-$\pl D\tactwin\gruConGame{X^2}{\Delta}$ for any compact metrizable space,
-but many
-compact metrizable spaces (e.g. $I=[0,1]$) are not strong Eberlein compact.
-
-Another game related to $\gruConGame{X}{x}$ is $\gruKPGame{X}$. During each
-round of this game, $\pl K$ chooses a compact set in $X$, followed by
-$\pl P$ choosing a point outside every previously chosen compact set. $\pl K$
-wins this game if the points chosen by $\pl P$ are locally finite in the
-space. In the case that $X$ is locally compact, this is essentially the
-same game as $\gruConGame{\oneptcomp X}{\infty}$ where neighborhoods of
-$\infty$ in $\oneptcomp X=X\cup\{\infty\}$ are complements of compact sets
-in $X$.
-
-Gruenhage showed in \cite{MR858337} that for locally compact spaces,
-$\pl K\tactwin\gruKPGame{X}$ if and
-only if $X$ is metacompact, and $\pl K\markwin\gruKPGame{X}$ if and only if
-$X$ is $\sigma$-metacompact. I've extended this to show that for locally
-compact or Hausdorff compactly-generated spaces,
-$\pl K\kmarkwin0\gruKPGame{X}$ if and only if $X$ is hemicompact.
-
-In fact, for
-locally compact or Hausdorff compactly-generated spaces, this game is
-equivalent with respect to predetermined strategies to a variation
-$\gruKLGame{X}$ where the second player is able to choose compact sets
-instead of points. However, there exists an ultrafilter
-$\mc F\in\beta\omega\setminus\omega$ such that the single-ultrafilter space
-$\omega\cup\{\mc F\}$
-is an example of a Hausdorff non-compactly-generated space with
-$\pl K\kmarkwin0\gruKPGame{X}$ but $\pl K\notkmarkwin0\gruKLGame{X}$. Due to a lack
-of counter-examples, it's natural to ask:
-
-\begin{question}
-  Does $\pl K\kmarkwin0\gruKLGame{X}$ imply $X$ is compactly generated?
-\end{question}
-
-Gruenhage suggested a consistent example of a locally compact non-metacompact
-space for which $\pl K$ has a perfect information strategy which may allow
-a winning $2$-tactical strategy for $\pl K$. However, I have shown that this
-space does not allow a winning $k$-tactical strategy for any $k<\omega$, which
-leaves the following question.
-
-\begin{question}
-  For locally compact spaces,
-  does $\pl K\ktactwin{2}\gruKPGame{X}$ imply
-  $X$ is metacompact?
-\end{question}
-
-I have investigated the classic topological game $\menGame{X}$
-characterizing the \term{Menger} property, in addition to several other
-selection property games of the form $G_{fin}(\mc A,\mc B)$ as studied
-by Scheepers \cite{MR1378387} and others.
-During round $n$ of such games, $\pl A$ chooses an element $A_n$ of $\mc A$,
-and $\pl B$ chooses some finite subset of $A_n$.
-$\pl B$ wins if the union of the chosen
-subsets is a member of $\mc B$. In this language, $\menGame{X}$ is the special
-case where $\mc A=\mc B=\mc O$, the collection of open covers of $X$,
-and denoting $\pl A$ by $\pl C$ and $\pl B$ by $\pl F$.
-
-Telgarsky \cite{MR753073} and Scheepers \cite{MR1273523} provided proofs of
-the fact that for metrizable spaces, $\pl F\win\menGame{X}$
-characterizes $\sigma$-compactness. I have broken this down to show that
-$\pl F\markwin\menGame{X}$ characterizes $\sigma$-compactness for regular
-spaces, and a winning perfect information strategy for a second-countable
-space may be improved to a winning Markov strategy.
-
-Since a winning $(k+2)$-Markov strategy can always be used to construct a
-winning $2$-Markov strategy, I have investigated the class of
-non-$\sigma$-compact spaces for which $\pl F\kmarkwin{2}\menGame{X}$.
-The one-point Lindel\"ofication $\oneptlind\omega_1=\omega_1\cup\{\infty\}$
-of a discrete first-uncountable space (neighborhoods of $\infty$ have countable
-complements) is a $ZFC$ example. Assuming an axiom $\alcompS\kappa$
-independent of $ZFC$ for $\omega_1<\kappa\leq 2^\omega$
-and introduced by Scheepers in \cite{MR1129143}
-to study a set-theoretic game similar to $\menGame{\oneptlind\kappa}$,
-I have shown that $\pl F\kmarkwin{2}\menGame{\oneptlind\kappa}$. Several
-games similar to $\menGame{\oneptlind\kappa}$ can be won with a $2$-Markov
-or $2$-tactical strategy assuming $\alcompS\kappa$, so it would be interesting
-to construct a winning strategy when $\alcompS\kappa$ fails.
-
-\begin{question}
-  When does there exist a cardinal $\kappa$ such that
-  $\pl F\kmarkwin{2}\menGame{\oneptlind\kappa}$ but $\neg\alcompS\kappa$?
-\end{question}
-
-It also hasn't been shown if there exists a space which actually requires
-perfect information for $\pl F$ to win $\menGame{X}$.
-
-\begin{question}
-  Is there a space $X$ with $\pl F\win\menGame{X}$ but
-  $\pl F\notkmarkwin{2}\menGame{X}$?
-\end{question}
-
-Recent developments in continuum theory have involved the study of generalized
-inverse limits with set-valued bonding maps and linearly ordered index sets:
-$\varprojlim \{X_i,f_{ij},L\}\subseteq \prod_{i\in L}X_i$ satisfying
-$x(i)\in f_{ij}(x(j))$ for all $i<j$ in $L$. Since $L$ need not
-be countable, metrizability of the space is not guaranteed, and many
-other questions in general topology may arise.
-
-I showed
-with Scott Varagona in \cite{destroyMetrizability} that when
-$X_i=[0,1]$ and $f_{ij}=f$ for some surjective,
-idempotent, upper-semicontinuous
-$f:[0,1]\to C([0,1])$ (where $C([0,1])$ is the collection of all subcontinua
-of $[0,1]$) distinct from the trivial map,
-the graph of $f$ must satisfy the so-called condition
-$\Gamma$: there exist $x,y$ with $\<x,x\>$, $\<y,y\>$, and $\<x,y\>$ on
-the graph of $f$.
-It's not hard to then see that when $L$ is an uncountable ordinal,
-the inverse limit must then contain a copy of $\omega_1+1$, which
-is not metrizable or even Corson compact.
-
-\begin{question}
-  Do all compactum-valued, idempotent, surjective, u.s.c. $f:[0,1]\to 2^{[0,1]}$
-  satsify condition $\Gamma$?
-\end{question}
-
-\begin{question}
-  Does there exist a nontrivial idempotent map $f$ and uncountable index $L$
-  such that $\varprojlim \{[0,1],f,L\}$ is metrizable?
-\end{question}
-
-\section*{Mentorship of Undergraduate Researchers}
-
-Due to my experience as an undergraduate researcher in mathematics, I gained
-my initial excitement for discovering new mathematical ideas. But just as
-importantly, I also learned a lot about how I would want to mentor other
-undergraduate researchers beginning their own mathematical journeys. In my
-first year at UNC Charlotte, I've already begun to do so; I have taken
-on my first student and will mentor her during Fall 2015
-as she writes a survey on finite and infinite combinatiral game theory. We
-chose this topic as it relates to my own current research on topological
-games, but it also is accessible to both an undergraduate student with a
-generalized background and to the layman.
-
-There is also much to be done by undergraduates in the way of original work
-related to my research. The \textit{$\pi$-Base Topology Database}
-(to which I am a contributor and consultant) is a project to electroncially
-catalog topological spaces, properties, and theorems, and
-can benefit from the contributions of talented young mathematicians.
-Furthermore, as the database is filled with results from the literature,
-the database automatically reveals open questions, several of which
-are non-trivial yet undergraduate-accessible. By having my future
-undergraduate students
-work on expanding the $\pi$-Base database, they will gain experience reading
-existing literature, reinterpreting results in a formal language to be
-used by the application, and find appropriate open questions with potential
-for publication.
-
-
-\section*{Mathematical Research and Cyberinfrastructure in the 21st Century}
-
-In addition to researching mathematics, I am also interested in the mechanics
-of how we research and collaborate as mathematicians in the 21st century.
-While we have made progress in recent years as journals move to make their
-archives available online and sites like arXiv.org provide convenient platforms
-for sharing preprints of cutting-edge results, we are still
-inefficiently passing around virtual sheets of paper.
-
-Mathematics research currently operates as a waterfall process: results
-are found, results are written up in a paper (and possibly shared in a
-preprint), this paper is submitted for publication, and following the refereeing
-and copyediting process, the paper may be published and accepted by the
-community. This workflow moves in one direction, and results in a static
-product (occasionally with errors).
-
-Thanks to the open web, we have the opportunity to adopt a more agile
-workflow. This process is perhaps most
-easily seen by looking at collaboration on open source software.
-Social coding platforms like GitHub and BitBucket have given software
-developers the ability to self-publish cutting-edge software projects for
-review by and possible collaboration with the open source community. These
-projects are tracked using revision control, with a public record of
-contributions made to each project. The process of creating, reviewing, and
-publishing such code is a continuous and democratic process, and results
-in living projects which can be refined and expanded over time.
-By taking advatnage of the tools provided
-by the modern web not only to assist with our research, but also with
-the publication and collaboration of our research, we will be able to most
-efficiently produce and share mathematical knowledge as we move forward in
-the modern era.
-
-Projects such as the \textit{$\pi$-Base Topology Database} and
-\textit{Homotopy Type Theory: Univalent Foundations of Mathematics} \cite{hottbook}
-(licensed under Creative Commons and accepting pull requests on GitHub)
-are great examples of how mathematicians can collaborate in producing
-high quality resources to assist researchers and students. Likewise, I
-am actively developing \textit{Online Seminars in Mathematics},
-an initiative to
-assist mathematical seminars in streaming their content online so that
-researchers may be engaged in such scholarly activity regardless of their
-geographical location.
-Through these programs and others,
-I am excited to continue innovating in this area
-as a mathematician and faculty member.
-
-
-
-
-\bibliographystyle{plain}
-\bibliography{bibliography}
+%\bibliographystyle{plain}
+%\bibliography{bibliography}
 
 \end{document}
